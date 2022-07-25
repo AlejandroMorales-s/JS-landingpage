@@ -1,5 +1,7 @@
 import * as THREE from 'three';
 import earthMap from '../assets/earthMap.jpg';
+import gradient from '../assets/gradient1.png';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 const earth = () => {
     const scene = new THREE.Scene();
@@ -35,7 +37,7 @@ const earth = () => {
     //* Earth
     const earthTexture = new THREE.TextureLoader().load(earthMap);
     const earth = new THREE.Mesh(
-        new THREE.SphereGeometry(3.1, 32, 32),
+        new THREE.SphereGeometry(3, 32, 32),
         new THREE.MeshStandardMaterial({
             map: earthTexture,
         })
@@ -43,11 +45,12 @@ const earth = () => {
     scene.add(earth);
     earth.position.set(1, 0, 0);
     
-
+    const spaceTexture = new THREE.TextureLoader().load(gradient);
+    scene.background = spaceTexture;
 
     function animate() {
         requestAnimationFrame(animate);
-        earth.rotation.y += 0.005;
+        earth.rotation.y -= 0.005;
         renderer.render(scene, camera);
     }
 
