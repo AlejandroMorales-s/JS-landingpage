@@ -18,11 +18,10 @@
 
 @mixin btn {
     border: 2.5px solid $primary;
-    color: $white;
+    color: $lightGray;
     font-weight: $semiBold;
     font-size: 1.6rem;
     padding: $spacing / 4 $spacing / 2;
-    margin-top: 3rem;
     background-color: $primary;
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
@@ -48,11 +47,13 @@
     -moz-border-radius: 0.5rem;
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
+    font-size: 1.8rem;
+    max-width: fit-content;
     @include transition(all);
     &:hover{
         background-color: $primary;
         cursor: pointer;
-        color: $white;
+        color: $lightGray;
     }
 }
 

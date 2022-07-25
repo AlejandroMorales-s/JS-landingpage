@@ -2,10 +2,11 @@
 //* ==================================================
 @import './scss/base/variables.scss';
 @import './scss/base/normalize.scss';
-@import './scss/base/globals.scss';
 @import './scss/base/mixins.scss';
 @import './scss/base/utilities.scss';
+@import './scss/base/globals.scss';
 
 //* Layout
 //* ==================================================
-@import './scss/layout/header/earth.scss';
+@import './scss/layout/header/header.scss';
+@import './scss/layout/header/headerNavbar.scss';

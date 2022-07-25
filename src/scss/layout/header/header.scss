@@ -1,0 +1,30 @@
+#header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: $spacing;
+    .header-title{
+        color: $lightGray;
+        font-size: 5rem;
+        font-weight: $semiBold;
+        line-height: 6.5rem;
+    }
+    .header-info{
+        color: $lightGray;
+        font-size: 1.8rem;
+        font-weight: $regular;
+        line-height: 2.5rem;
+    }
+    .header-buttons-container{
+        display: flex;
+        gap: $spacing;
+        .header-buttons{
+            @include btn;
+            &:hover{
+                background-color: $primary;
+                color: $lightGray;
+            }
+        }
+    }
+}
