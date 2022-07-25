@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+$font: 'Poppins', sans-serif;
+
+// Fuentes
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semiBold: 600;
+
+// Colors
+$primary: #9341dd;
+$lightGray: #dcdcdc;
+$white: #ffffff;
+$black: #000000;
+$blackBg: rgba(0, 0, 0, 0.5);
+$text: #6B7280;
+$red: #ff0000;
+
+// Media Queries
+$mobile: 359px;
+$tablet: 768px;
+$desktop: 1200px;
+
+// Margins
+$spacing: 5rem;
+
+// Font Sizes
+$fontSize: (2.5rem, 2.4rem, 2.6rem, 1.6rem);

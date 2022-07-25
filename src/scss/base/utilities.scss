@@ -1,0 +1,46 @@
+.container{
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+}
+.align-text{
+    text-align: center;
+}
+.text-semiBold{
+    font-weight: $semiBold;
+}
+.text-medium{
+    font-weight: $medium;
+}
+.flex{
+    display: flex;
+}
+.items-center{
+    align-items: center;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.grid{
+    display: grid;
+}
+.display{
+    display: block;
+}
+.hidden{
+        transform: translateY(-500%);
+        -webkit-transform: translateY(-500%);
+        -moz-transform: translateY(-500%);
+        -ms-transform: translateY(-500%);
+        -o-transform: translateY(-500%);
+        @include transition(all);
+}
+.show{
+    @include transformNavbar($isHamburgerMenu: true);
+}
+.show-profile-menu{
+    @include transformNavbar($isHamburgerMenu: false);
+}
